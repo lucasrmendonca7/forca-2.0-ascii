@@ -1,4 +1,4 @@
-# Jogo da Forca - Versão Terminal
+# Jogo da Forca 2.0
 
 ## Descrição
 Este projeto recria o clássico **Jogo da Forca**, oferecendo uma experiência mais dinâmica e divertida que a versão tradicional. O jogo utiliza recursos do terminal, como cores, efeitos visuais e artes em **ASCII**, tornando a interação do jogador mais imersiva e envolvente.
