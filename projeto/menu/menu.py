@@ -16,6 +16,8 @@ def menu():
             escrever(opcoes[i], atraso=0.025, centralizar=True, cor="\033[33m")
         escrever(opcoes[3], atraso=0.025, centralizar=True, cor="\033[31m")
 
+        print("\n" * 2)
+
         escolha = input("Digite o número da opção: ")
         try:
             escolha = int(escolha)
