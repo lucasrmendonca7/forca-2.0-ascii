@@ -9,16 +9,23 @@ def largura_terminal():
     except OSError:
         return 80 
 
-def escrever(texto, atraso=0.05, centralizar=False, cor=""):
+def escrever(texto, atraso=0.05, centralizar=False, cor="", reset_por_letra=True):
     reset = "\033[0m"
     largura = largura_terminal()
     if centralizar:
         inicio = (largura - len(texto)) // 2
         sys.stdout.write(" " * max(0, inicio))
-    for letra in texto:
-        sys.stdout.write(cor + letra + reset)
+    
+    if reset_por_letra: 
+        for letra in texto:
+            sys.stdout.write(cor + letra + reset)
+            sys.stdout.flush()
+            time.sleep(atraso)
+    else:
+        sys.stdout.write(cor + texto + reset)
         sys.stdout.flush()
         time.sleep(atraso)
+    
     print()
 
 def mostrar_ascii_dinamico(titulo, atraso_linha=0.1):
@@ -89,23 +96,7 @@ def frames_forca(i):
     return frames_forca[i]
 
 def tela_youwin():
-    youwin = """\033[32m 
-
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-    
-    
-     
+    youwin = "\n" * 15 + """\033[32m  
  █████ █████    ███████    █████  █████    █████   ███   █████ █████ ██████   █████ ███
 ░░███ ░░███   ███░░░░░███ ░░███  ░░███    ░░███   ░███  ░░███ ░░███ ░░██████ ░░███ ░███
  ░░███ ███   ███     ░░███ ░███   ░███     ░███   ░███   ░███  ░███  ░███░███ ░███ ░███
@@ -117,23 +108,7 @@ def tela_youwin():
                                                                                         \033[0m"""
     return youwin
 def tela_gameover():
-    gameover = """\033[31m
-
-    
-
-    
-
-
-    
-
-
-
-
-
-    
-
-    
-
+    gameover = "\n" * 15 + """\033[31m
      ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓██████████████▓▒░░▒▓████████▓▒░       ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░  
     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
     ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
@@ -144,5 +119,3 @@ def tela_gameover():
                                                                                                                             \033[0m"""
     
     return gameover
-
-

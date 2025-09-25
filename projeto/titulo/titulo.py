@@ -48,8 +48,8 @@ def titulo_ascii():
 
 
 
-cor_texto1 = "\033[96m"  # ciano
-cor_texto2 = "\033[93m"  # amarelo
+cor_texto1 = "\033[96m" 
+cor_texto2 = "\033[93m"  
 
 #if __name__ == "__main__":
     #mostra_titulo()

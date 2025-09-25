@@ -7,7 +7,7 @@ banco_palavras = {
         "sapato", "guarda", "praia", "chuva", "teatro",
         "pintura", "mercado", "estrada", "cabelo", "flores",
         "roupa", "musica", "dança", "cidade", "montanha",
-        "rio", "oceano", "estrela", "lua", "sol"
+        "rio", "oceano", "estrela", "lua", "sol", "programacao"
     ],
     "animais": [
         "cachorro", "gato", "elefante", "leao", "tigre",
@@ -37,7 +37,8 @@ banco_palavras = {
         "chile", "peru", "colombia", "venezuela", "uruguai",
         "paraguai", "bolivia", "cuba", "jamaica", "haiti",
         "turquia", "grecia", "polonia", "suica", "austria",
-        "hungria", "dinamarca", "finlandia", "islandia", "angola"
+        "hungria", "dinamarca", "finlandia", "islandia", "angola",
+        "senegal", "mocambique", "sudao", "nigeria", "etiopia"
     ],
     "objetos": [
         "cadeira", "mesa", "copo", "garrafa", "caneta",

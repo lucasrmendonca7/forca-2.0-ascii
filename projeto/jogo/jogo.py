@@ -4,6 +4,8 @@ from utils.bancodepalavras import banco_palavras
 import os
 import time
 import random
+import curses
+
 
 # ----------------------- MENSAGENS -----------------------
 def mensagem_vitoria(palavra):
@@ -63,7 +65,7 @@ def jogar_forca(palavra, tema="", score=None):
         escrever(" ".join(oculto), atraso=0.0, centralizar=True)
         print("\n" * 2)
         escrever(f"Você tem {vidas} vidas", atraso=0.0, centralizar=True)
-        escrever(f"Letras já tentadas: {', '.join(sorted(letras_escolhidas)).upper()}", atraso=0.0, centralizar= True, cor=cor_ciano)
+        escrever(f"Letras já tentadas: {', '.join(sorted(letras_escolhidas)).upper()}", atraso=0.0, centralizar=True, cor=cor_ciano)
 
         if primeiro_loop:
             escrever("Aperte ENTER para adivinhar a palavra completa",
@@ -89,6 +91,9 @@ def jogar_forca(palavra, tema="", score=None):
                 time.sleep(1.5)
                 mensagem_derrota(palavra)
                 return False
+
+        if tentativa == "sair":
+            return
 
         if len(tentativa) != 1 or not verifica_letras(tentativa):
             print(cor_amarela + "Digite apenas UMA letra válida!" + cor_reset)
@@ -125,6 +130,7 @@ def jogar_forca(palavra, tema="", score=None):
             limpar_tela()
             mensagem_derrota(palavra)
             return False
+
         
 
 
