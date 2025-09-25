@@ -4,6 +4,7 @@ from titulo.titulo import titulo_ascii
 import time
 import sys
 
+
 def menu():
     while True:
         limpar_tela()
@@ -76,3 +77,4 @@ def ajuda():
     print("\n" * 3)
     escrever("Pressione ENTER para voltar ao menu...", atraso=0.0, centralizar=True, cor="\033[1;37m")
     input() 
+
