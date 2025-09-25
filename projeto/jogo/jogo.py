@@ -1,10 +1,8 @@
 from titulo.titulo import titulo_ascii
 from utils.utilidades import *
 from utils.bancodepalavras import banco_palavras
-import os
 import time
 import random
-import curses
 
 
 # ----------------------- MENSAGENS -----------------------
@@ -205,4 +203,5 @@ def modo_sem_fim():
         else:
             escrever(f"Pontuação final: {score}", atraso=0.025, centralizar=True, cor="\033[31m")
             time.sleep(3)
+
             break
