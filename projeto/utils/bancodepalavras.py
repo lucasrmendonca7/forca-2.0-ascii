@@ -1,12 +1,12 @@
 banco_palavras = {
     "geral": [
         "carro", "banana", "computador", "cachorro", "brasil",
-        "janela", "avião", "telefone", "cama", "bicicleta",
+        "janela", "aviao", "telefone", "cama", "bicicleta",
         "abacaxi", "elefante", "cadeira", "escola", "livro",
         "futebol", "copo", "porta", "trabalho", "viagem",
         "sapato", "guarda", "praia", "chuva", "teatro",
         "pintura", "mercado", "estrada", "cabelo", "flores",
-        "roupa", "musica", "dança", "cidade", "montanha",
+        "roupa", "musica", "danca", "cidade", "montanha",
         "rio", "oceano", "estrela", "lua", "sol", "programacao"
     ],
     "animais": [
@@ -16,7 +16,7 @@ banco_palavras = {
         "rinoceronte", "hipopotamo", "canguru", "golfinho", "foca",
         "polvo", "camelo", "jacare", "anta", "tamandua",
         "lobo", "raposa", "texugo", "lontra", "tucano",
-        "arara", "pavão", "galinha", "galo", "ovelha",
+        "arara", "pavao", "galinha", "galo", "ovelha",
         "bode", "porco", "camaleao", "lagarto", "morcego"
     ],
     "frutas": [
@@ -26,8 +26,8 @@ banco_palavras = {
         "melancia", "melão", "limão", "acerola", "pitanga",
         "jaca", "carambola", "caju", "framboesa", "mirtilo",
         "pessego", "toranja", "graviola", "jabuticaba",
-        "tamarindo", "lichia", "romã", "durian", "sapoti",
-        "umbu", "siriguela", "guarana", "cupuaçu"
+        "tamarindo", "lichia", "roma",
+        "umbu", "siriguela", "guarana", "cupuacu"
     ],
     "paises": [
         "brasil", "argentina", "canada", "estadosunidos", "mexico",
@@ -43,7 +43,7 @@ banco_palavras = {
     "objetos": [
         "cadeira", "mesa", "copo", "garrafa", "caneta",
         "lapis", "livro", "computador", "celular", "fone",
-        "bola", "relógio", "chave", "porta", "janela",
+        "bola", "relogio", "chave", "porta", "janela",
         "televisao", "sofa", "sapato", "mochila", "quadro",
         "espelho", "pente", "escova", "colher", "garfo",
         "prato", "panela", "martelo", "serrote", "parafuso",
@@ -61,3 +61,4 @@ banco_palavras = {
         "geologo", "biologo", "astronomo", "quimico", "fisico"
     ]
 }
+
