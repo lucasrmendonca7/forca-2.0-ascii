@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forca2"
+version = "0.1.0"
+description = "Forca 2.0 é uma versão moderna e divertida do clássico jogo da forca, jogado diretamente no terminal."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Lucas Rodrigues Mendonça", email = "lucas80002@gmail.com"}
+]
+
+dependencies = [] 
+
+[project.urls]
+"Homepage" = "https://github.com/lucasrmendonca7/forca-2.0-ascii"
+"Bug Tracker" = "https://github.com/lucasrmendonca7/forca-2.0-ascii/issues"
+
+[project.scripts]
+forca2 = "forca2.main:main"
